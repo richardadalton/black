@@ -16,18 +16,18 @@
         public void Ignore() { _text = "ignore"; }
         public void Ignore(string message) { _text = string.Format("ignore: {0}", message); }
         public void Report(string message) { _text = string.Format("report: {0}", message); }
-        public void Empty() { _text = string.Empty; }
+        public void NoChange() { _text = string.Empty; }
         public void Error(string message) { _text = string.Format("error: {0}", message); }
         public void SetText(string message) { _text = message; }
 
-        public string AsSlimCell() { return _text; }
+        public override string ToString() { return _text; }
 
         public void CompareWith(string value)
         {
-            if (AsSlimCell() == value)
+            if (ToString() == value)
                 Pass();
             else
-                Fail(string.Format("Expected:{0} Actual:{1}",AsSlimCell(), value));
+                Fail(string.Format("Expected:{0} Actual:{1}", ToString(), value));
         }
     }
 }

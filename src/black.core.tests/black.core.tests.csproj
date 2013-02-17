@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}</ProjectGuid>
+    <ProjectGuid>{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>com.devjoy.black</RootNamespace>
-    <AssemblyName>black.core</AssemblyName>
+    <RootNamespace>black.core.tests</RootNamespace>
+    <AssemblyName>black.core.tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,31 +30,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>black.key.pfx</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\DevTools\NUnit\NUnit-2.6.0.12051\bin\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnyClass.cs" />
+    <Compile Include="QueryTableTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SharedTable.cs" />
-    <Compile Include="TableAdapter.cs" />
-    <Compile Include="TableCell.cs" />
-    <Compile Include="TableRow.cs" />
-    <Compile Include="TableTable.cs" />
+    <Compile Include="SharedTableTests.cs" />
+    <Compile Include="TableTableTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="black.key.pfx" />
+    <ProjectReference Include="..\black.core\black.core.csproj">
+      <Project>{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}</Project>
+      <Name>black.core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

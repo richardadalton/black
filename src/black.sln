@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "black", "black\black.csproj", "{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "black.core", "black.core\black.core.csproj", "{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "black.core.tests", "black.core.tests\black.core.tests.csproj", "{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D87DFBA-4301-47C4-A6DA-88B3A095D6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7538CD61-8FA0-48B0-8F62-4C0A821DDBC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
