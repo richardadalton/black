@@ -7,12 +7,12 @@ www.devjoy.com
 
 Quick Start Guide
 
-black is a library that simplifies the process of working with FitNesse/SLiM . It provides an API for manipulating Query Tables and Table Tables in a more intuitive way. It also takes the heavy lifting out of sharing data FitNesse tables. 
+black is a library that simplifies the process of working with FitNesse/SLiM . It provides an API for manipulating Query Tables and Table Tables in a more intuitive way. It also takes the heavy lifting out of sharing data between FitNesse tables. 
 
 QUERY TABLE
 -----------
 
-When you have a list of domain objects that represent the results of a query, you can’t simply return them from a Query Table fixture. You need to transform the domain objects into a complex data structure consisting 
+When you have a list of domain objects that represent the results of a query, you canï¿½t simply return them from a Query Table fixture. You need to transform the domain objects into a complex data structure consisting 
 of a List of Lists of Lists.
 
 The black QueryTable can take a list of domain objects and transform it into the format required by FitNesse/SLiM.
@@ -21,14 +21,14 @@ The black QueryTable can take a list of domain objects and transform it into the
     var table = 
         new QueryTable<AnyClass>().For(objects);
 
-That’s all there is to Query Tables in black. This exact code will work for Query Tables, Ordered Query Tables, and Subset Query Tables without any change.
+Thatï¿½s all there is to Query Tables in black. This exact code will work for Query Tables, Ordered Query Tables, and Subset Query Tables without any change.
 
 
 
 TABLE TABLE
 -----------
 
-The FitNesse/SLiM TableTable is a flexible way of representing any table layout, including rows with different numbers of cells. Like the Query Table, the Table Table uses a complex arrangement of Lists of Lists to represent the table and it’s data.
+The FitNesse/SLiM TableTable is a flexible way of representing any table layout, including rows with different numbers of cells. Like the Query Table, the Table Table uses a complex arrangement of Lists of Lists to represent the table and itï¿½s data.
 
 To work with a Table Table in your fixture you need to read the List based representation, and to return results you need to produce the same list based data structure. The black TableTable object converts FitNesse/SLiM tables into a representation that allows direct manipulation of cells, and allows conversion back into the FitNesse/SLiM format for returning results.
 
@@ -91,7 +91,7 @@ Dispose of a shared table
 
 Tables can also be accessed via an alias, allowing multiple tables of the same type of object
 
-    var table = SharedTables.Table<AnyClass>(“Alias”);
+    var table = SharedTables.Table<AnyClass>(ï¿½Aliasï¿½);
 
 Dispose of all shared tables
 
