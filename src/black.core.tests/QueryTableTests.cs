@@ -36,7 +36,7 @@ namespace black.core.tests
                                        {
                                            new List<object> {"Any Property", "A3"},
                                            new List<object> {"Any Other Property", "B3"},
-                                           new List<object> {"Yet Another Property", "C3"},
+                                           new List<object> {"Yet Another Property", null},
                                            new List<object> {"A Date Time Property", "03-Mar-2014 13:30:55"},
                                        }
                                };
@@ -77,7 +77,7 @@ namespace black.core.tests
                                        {
                                            new List<object> {"New Name", "A3"},
                                            new List<object> {"Another New Name", "B3"},
-                                           new List<object> {"Yet Another Property", "C3"},
+                                           new List<object> {"Yet Another Property", null},
                                            new List<object> {"A Date Time Property", "03-Mar-2014 13:30:55"},
                                        }
                                };
@@ -115,7 +115,7 @@ namespace black.core.tests
                                        {
                                            new List<object> {"New Name", "A3"},
                                            new List<object> {"Another New Name", "B3"},
-                                           new List<object> {"Yet Another Property", "C3"},
+                                           new List<object> {"Yet Another Property", null},
                                            new List<object> {"A Date Time Property", "03-Mar-2014 13:30:55"},
                                        }
                                };
@@ -177,7 +177,7 @@ namespace black.core.tests
                                    new List<object>
                                        {
                                            new List<object> {"Any Other Property", "B3"},
-                                           new List<object> {"Yet Another Property", "C3"},
+                                           new List<object> {"Yet Another Property", null},
                                        }
                                };
 
@@ -220,7 +220,7 @@ namespace black.core.tests
                            {
                                new AnyClass {AnyProperty = "A1", AnyOtherProperty = "B1", YetAnotherProperty = "C1", ADateTimeProperty = new DateTime(2012, 1, 1, 13, 30, 55)},
                                new AnyClass {AnyProperty = "A2", AnyOtherProperty = "B2", YetAnotherProperty = "C2", ADateTimeProperty = new DateTime(2013, 2, 2, 13, 30, 55)},
-                               new AnyClass {AnyProperty = "A3", AnyOtherProperty = "B3", YetAnotherProperty = "C3", ADateTimeProperty = new DateTime(2014, 3, 3, 13, 30, 55)},
+                               new AnyClass {AnyProperty = "A3", AnyOtherProperty = "B3", YetAnotherProperty = null, ADateTimeProperty = new DateTime(2014, 3, 3, 13, 30, 55)},
                            };
             return list;
         }
