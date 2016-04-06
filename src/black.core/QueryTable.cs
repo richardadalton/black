@@ -97,6 +97,10 @@ namespace com.devjoy.black
             var value = source.GetType()
                                  .GetProperty(property)
                                  .GetValue(source, null);
+            if(value == null)
+            {
+                return null;
+            }
 
             if (value.GetType().Name == "DateTime")
             {
